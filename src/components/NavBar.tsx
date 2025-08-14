@@ -37,7 +37,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {["Inicio", "Proyectos", "Servicios", "Contacto"].map((name) => (
+            {["Hero", "TechStack", "Projects", "Education", "About", "Contact"].map((name) => (
               <a
                 key={name}
                 href={`#${name.toLowerCase()}`}
