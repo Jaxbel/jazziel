@@ -112,7 +112,7 @@ export const Hero: FC = () => {
                 "w-[84%] sm:w-[82%] md:w-[80%] lg:w-[78%]",
                 // posición vertical fina: ala justo sobre la línea de referencia
                 // (usa valores arbitrarios para afinar por breakpoint)
-                "top-[-2.3rem] sm:top-[-2.8rem] md:top-[-2rem] lg:top-[-2rem]"
+                "top-[-2.3rem] sm:top-[-2rem] md:top-[-2rem] lg:top-[-1rem]"
               ].join(" ")}
               initial={{ y: -160, rotate: 0, opacity: 0, scale: 0.95 }}
               animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
