@@ -1,5 +1,3 @@
-// src/components/Contact.tsx
-import React from 'react'
 import type { FC } from 'react'
 import { Section } from './Section'
 

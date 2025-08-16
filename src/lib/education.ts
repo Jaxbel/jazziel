@@ -18,23 +18,23 @@ export const education: EdcucationItem[] = [
     featured: true,
     image: "/logos/logo_TECT.png", 
     certification: "Degree in Computer Software Engineering",
-    certificationUrl: ""   // TODO: link a título/constancia
+    certificationUrl: ""   
   },
   {
     institution: "Oracle ONE / Alura LATAM",
     detail: "Backend with Java Certification",
     year: "2023",
-    url: "https://www.aluracursos.com/",               // TODO: URL del programa
+    url: "https://www.aluracursos.com/",              
     featured: true,
     image: "/logos/Oracle1.png", 
     certification: "Backend with Java Certification",
-    certificationUrl: ""   // TODO: link oficial de la credencial
+    certificationUrl: ""   
   },
   {
     institution: "ICOHS College",
     detail: "Cybersecurity Specialist",
-    year: "2025",
-    url: "https://icohs.edu/",               // TODO: URL del college o programa
+    year: "In progress",
+    url: "https://icohs.edu/",               
     featured: false,
     image: "/logos/icohs.png", 
     certification: "",

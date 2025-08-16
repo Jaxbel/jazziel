@@ -4,10 +4,9 @@ import { LocationCard } from "./LocationCard";
 
 export const About: FC = () => (
   <Section id="about" size="md" className="bg-background text-foreground">
-    <h2 className="text-4xl font-bold text-center mb-10">About me</h2>
+    <h2 className="text-3xl font-bold text-center mb-8">About me</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {/* Left: map / location + bio */}
       <div className="space-y-6">
         {/* Location */}
         <div className="rounded-2xl border border-border bg-card/70 shadow-sm">

@@ -16,7 +16,7 @@ export default function Cursor() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setIsVisible(true);
-      mouseX.set(e.clientX - 7.5); // half of size
+      mouseX.set(e.clientX - 7.5); 
       mouseY.set(e.clientY - 7.5);
     };
 

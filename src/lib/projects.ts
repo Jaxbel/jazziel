@@ -3,12 +3,12 @@ import type { TechnologyName } from "@/lib/technologies";
 export type Project = {
   name: string;
   description: string;
-  url: string;            // demo / live / preview
-  actionLabel?: string;   // CTA principal
-  repo?: string;          // enlace al repo (opcional)
-  tech: TechnologyName[]; // nombres válidos definidos en technologies
+  url: string;            
+  actionLabel?: string;   
+  repo?: string;         
+  tech: TechnologyName[]; 
   featured?: boolean;
-  image?: string;         // thumbnail/cover (opcional)
+  image?: string;        
 };
 
 export const projects: Project[] = [

@@ -12,9 +12,7 @@ export const FeaturedEducation: FC = () => {
 
   return (
     <Section id="education" size="md">
-      <h2 className="text-4xl font-bold text-center mb-8 text-foreground">
-        Education
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
 
       {list.length === 0 && (
         <div className="rounded-lg border border-border bg-card/60 p-4 text-sm text-muted-foreground">

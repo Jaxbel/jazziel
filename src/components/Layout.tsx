@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Cursor from "@/components/cursor"; // o '../components/Cursor'
+import Cursor from "@/components/cursor"; 
 
 export default function Layout() {
   return (
