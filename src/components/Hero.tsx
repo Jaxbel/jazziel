@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 import React, { useState, useCallback, useEffect, useRef } from "react";
 import type { FC } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,7 +6,7 @@ import { Section } from "./Section";
 const EASTER_EGG_CLICKS = 15;
 const CLICK_WINDOW_MS = 2000;
 const HAT_VISIBLE_MS = 8000;
-const HAT_SRC = "/easter-eggs/strawhatt.png"; 
+const HAT_SRC = "/easter-eggs/strawhatt.png"; // usa el que tengas
 
 export const Hero: FC = () => {
   const [clicks, setClicks] = useState(0);
@@ -95,7 +94,7 @@ export const Hero: FC = () => {
         <img
           src="/jazziel.jpg"
           alt="Jazziel Bello"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-xl object-cover shadow-xl mx-auto my-6 border border-border bg-card"          
+          className="w-full h-full rounded-xl object-cover shadow-xl border border-border bg-card"
           loading="lazy"
           draggable={false}
         />
@@ -108,11 +107,10 @@ export const Hero: FC = () => {
               alt="Straw hat"
               className={[
                 "absolute left-1/2 -translate-x-1/2 pointer-events-none",
-                // ancho del sombrero (ala ancha, sin tapar cejas)
+                // ancho consistente por breakpoint
                 "w-[84%] sm:w-[82%] md:w-[80%] lg:w-[78%]",
-                // posición vertical fina: ala justo sobre la línea de referencia
-                // (usa valores arbitrarios para afinar por breakpoint)
-                "top-[-2.3rem] sm:top-[-2rem] md:top-[-2rem] lg:top-[-1rem]"
+                // usa porcentaje para que en móvil no suba de más
+                "-top-[14%] sm:-top-[13%] md:-top-[12%] lg:-top-[11%]",
               ].join(" ")}
               initial={{ y: -160, rotate: 0, opacity: 0, scale: 0.95 }}
               animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
