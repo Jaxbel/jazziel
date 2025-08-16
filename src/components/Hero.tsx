@@ -78,7 +78,7 @@ export const Hero: FC = () => {
 
       <p className="max-w-prose text-sm sm:text-base leading-6 text-muted-foreground">
         Backend-focused developer with a love for clean code, security, and building smart
-        systems. I craft APIs, dashboards, and automation tools with tech that scale.
+        systems. I craft APIs, dashboards, and automation tools with tech that scales.
       </p>
 
       {/* Avatar + Easter Egg */}
