@@ -1,3 +1,4 @@
+// src/components/Hero.tsx
 import React, { useState, useCallback, useEffect, useRef } from "react";
 import type { FC } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,12 +10,13 @@ const HAT_VISIBLE_MS = 8000;
 const HAT_SRC = "/easter-eggs/strawhatt.png"; // usa el que tengas
 
 export const Hero: FC = () => {
-  const [clicks, setClicks] = useState(0);
+  const [tapCount, setTapCount] = useState(0);
   const [hatOn, setHatOn] = useState(false);
   const [hatKey, setHatKey] = useState(0);
   const clickTimerRef = useRef<number | null>(null);
   const hideTimerRef = useRef<number | null>(null);
 
+  // Preload del sombrero
   useEffect(() => {
     const img = new Image();
     img.src = HAT_SRC;
@@ -22,16 +24,16 @@ export const Hero: FC = () => {
 
   const resetClickTimer = useCallback(() => {
     if (clickTimerRef.current) window.clearTimeout(clickTimerRef.current);
-    clickTimerRef.current = window.setTimeout(() => setClicks(0), CLICK_WINDOW_MS);
+    clickTimerRef.current = window.setTimeout(() => setTapCount(0), CLICK_WINDOW_MS);
   }, []);
 
   const handleTap = useCallback(() => {
-    setClicks((prev) => {
+    setTapCount((prev) => {
       const next = prev + 1;
       if (!hatOn && next >= EASTER_EGG_CLICKS) {
         setHatOn(true);
         setHatKey((k) => k + 1);
-        return 0;
+        return 0; // reinicia después de activar
       }
       return next;
     });
@@ -45,6 +47,7 @@ export const Hero: FC = () => {
     }
   };
 
+  // Auto-ocultar sombrero después de un tiempo
   useEffect(() => {
     if (hatOn) {
       if (hideTimerRef.current) window.clearTimeout(hideTimerRef.current);
@@ -55,6 +58,7 @@ export const Hero: FC = () => {
     };
   }, [hatOn]);
 
+  // Limpieza de timers
   useEffect(() => {
     return () => {
       if (clickTimerRef.current) window.clearTimeout(clickTimerRef.current);
@@ -78,7 +82,7 @@ export const Hero: FC = () => {
 
       <p className="max-w-prose text-sm sm:text-base leading-6 text-muted-foreground">
         Backend-focused developer with a love for clean code, security, and building smart
-        systems. I craft APIs, dashboards, and automation tools with tech that scales.
+        systems. I craft APIs, dashboards, and automation tools with tech that scale.
       </p>
 
       {/* Avatar + Easter Egg */}
@@ -94,7 +98,7 @@ export const Hero: FC = () => {
         <img
           src="/jazziel.jpg"
           alt="Jazziel Bello"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-xl object-cover shadow-xl mx-auto my-6 border border-border bg-card"          
+          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-xl object-cover shadow-xl mx-auto border border-border bg-card"
           loading="lazy"
           draggable={false}
         />
@@ -107,9 +111,7 @@ export const Hero: FC = () => {
               alt="Straw hat"
               className={[
                 "absolute left-1/2 -translate-x-1/2 pointer-events-none",
-                // ancho consistente por breakpoint
                 "w-[84%] sm:w-[82%] md:w-[80%] lg:w-[78%]",
-                // usa porcentaje para que en móvil no suba de más
                 "-top-[14%] sm:-top-[13%] md:-top-[12%] lg:-top-[11%]",
               ].join(" ")}
               initial={{ y: -160, rotate: 0, opacity: 0, scale: 0.95 }}
@@ -119,7 +121,6 @@ export const Hero: FC = () => {
             />
           )}
         </AnimatePresence>
-
       </div>
     </Section>
   );
