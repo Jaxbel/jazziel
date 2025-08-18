@@ -98,7 +98,7 @@ export const Hero: FC = () => {
         <img
           src="/jazziel.jpg"
           alt="Jazziel Bello"
-          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-xl object-cover shadow-xl mx-auto border border-border bg-card"
+          className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-xl object-cover shadow-xl mx-auto my-6 border border-border bg-card"
           loading="lazy"
           draggable={false}
         />
