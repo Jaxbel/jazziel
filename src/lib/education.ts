@@ -22,7 +22,7 @@ export const education: EdcucationItem[] = [
   },
   {
     institution: "Oracle ONE / Alura LATAM",
-    detail: "Backend with Java Certification",
+    detail: "Backend with Java",
     year: "2023",
     url: "https://www.aluracursos.com/",              
     featured: true,
