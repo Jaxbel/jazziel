@@ -28,7 +28,7 @@ export const education: EdcucationItem[] = [
     featured: true,
     image: "/logos/Oracle1.png", 
     certification: "Backend with Java Certification",
-    certificationUrl: ""   
+    certificationUrl: "https://app.aluracursos.com/program/certificate/acb13fbb-eadd-4529-a7db-7d73ffe3b0de"   
   },
   {
     institution: "ICOHS College",
