@@ -41,11 +41,13 @@ export const About: FC = () => (
           <div className="mb-4 flex items-center justify-between gap-3">
             <h3 className="text-lg font-semibold">Connect</h3>
             <a
-              href="/resume.pdf"
+              href="/jazziel_bello_cv.pdf"
+              download="Jazziel_Bello_Resume.pdf"
               className="text-sm font-medium text-primary hover:underline underline-offset-4 focus:outline-none focus-visible:ring-1 focus-visible:ring-primary/60 rounded"
             >
               Download résumé
             </a>
+
           </div>
 
           <ul className="space-y-2 text-sm text-muted-foreground">
