@@ -7,7 +7,7 @@ import { Section } from "./Section";
 const EASTER_EGG_CLICKS = 15;
 const CLICK_WINDOW_MS = 2000;
 const HAT_VISIBLE_MS = 8000;
-const HAT_SRC = "/easter-eggs/strawhatt.png"; // usa el que tengas
+const HAT_SRC = "/easter-eggs/strawhatt-1.png"; // usa el que tengas
 
 export const Hero: FC = () => {
   const [tapCount, setTapCount] = useState(0);
@@ -112,13 +112,15 @@ export const Hero: FC = () => {
               className={[
                 "absolute left-1/2 -translate-x-1/2 pointer-events-none",
                 "w-[84%] sm:w-[82%] md:w-[80%] lg:w-[78%]",
-                "-top-[14%] sm:-top-[13%] md:-top-[12%] lg:-top-[11%]",
+                "-top-[10%] sm:-top-[9%] md:-top-[8%] lg:-top-[7%]",
+                "drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]"
               ].join(" ")}
               initial={{ y: -160, rotate: 0, opacity: 0, scale: 0.95 }}
               animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
               exit={{ y: -120, opacity: 0 }}
               transition={{ type: "spring", stiffness: 600, damping: 24, mass: 0.9 }}
             />
+
           )}
         </AnimatePresence>
       </div>
