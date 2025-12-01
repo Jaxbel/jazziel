@@ -17,18 +17,19 @@ export const About: FC = () => (
         <div className="p-6 md:p-7 rounded-2xl border border-border bg-card shadow-sm">
           <h3 className="text-lg font-semibold mb-2">Hi, I’m Jazziel 👋</h3>
           <p className="text-sm text-muted-foreground leading-6">
-            Full‑stack developer focused on shipping clean, efficient and scalable products.
-            I work across the stack—from data models and APIs to accessible, polished UIs—
-            and I’m constantly learning to push quality and speed in delivery.
+            Backend-leaning full-stack developer focused on shipping clean, reliable,
+            and scalable products. I work across the stack—from data models and APIs
+            to accessible, polished UIs—and I’m always refining my workflow to ship
+            faster without sacrificing quality.
           </p>
 
-          {/* Availability badge (green "online") */}
+          {/* Availability badge */}
           <div className="mt-4 inline-flex items-center gap-2">
             <span
               className="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-1 text-sm font-medium text-emerald-400 hover:bg-emerald-500/20 hover:text-emerald-300 transition-colors"
             >
-              <span className="h-2 w-2 rounded-full bg-emerald-400"></span>
-              Open to new opportunities
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              Open to new roles & collaborations
             </span>
           </div>
         </div>
@@ -47,8 +48,11 @@ export const About: FC = () => (
             >
               Download résumé
             </a>
-
           </div>
+
+          <p className="mb-3 text-xs text-muted-foreground">
+            Best places to see my work or reach out:
+          </p>
 
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
@@ -90,19 +94,26 @@ export const About: FC = () => (
           <div className="p-5 md:p-6 rounded-2xl border border-border bg-card shadow-sm text-center">
             <p className="text-sm text-muted-foreground mb-1">Projects shipped</p>
             <p className="text-2xl font-bold">10+</p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              From internal tools to client-facing apps.
+            </p>
           </div>
           <div className="p-5 md:p-6 rounded-2xl border border-border bg-card shadow-sm text-center">
             <p className="text-sm text-muted-foreground mb-1">Coding hours</p>
             <p className="text-2xl font-bold">1200+</p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Hands-on building, debugging, and shipping.
+            </p>
           </div>
         </div>
 
-        {/* Currently learning (no tech stack list) */}
+        {/* Currently learning */}
         <div className="p-6 md:p-7 rounded-2xl border border-border bg-card shadow-sm">
           <h3 className="text-lg font-semibold mb-2">Currently learning</h3>
           <p className="text-sm text-muted-foreground leading-6">
-            PyTorch · Deep Learning & Artificial Intelligence — focusing on practical
-            model training, evaluation, and deployment for real‑world apps.
+            PyTorch · Deep Learning · AI Engineering — focusing on training,
+            evaluating, and deploying models into real products, not just running
+            them in notebooks.
           </p>
         </div>
       </div>
