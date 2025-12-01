@@ -71,7 +71,7 @@ export function LocationCard() {
     <div className="relative flex min-h-60 flex-col gap-6 overflow-hidden rounded-xl border p-4 lg:p-6">
       <div className="flex items-center gap-2">
         <Icons.MapPin className="size-4" />
-        <h2 className="font-light text-sm">Tecate, Baja California</h2>
+        <h2 className="font-light text-sm">Tijuana, baja california</h2>
       </div>
       <div className="absolute inset-0 top-0 mx-auto aspect-square h-[388px] [@media(max-width:420px)]:bottom-[-140px] [@media(max-width:420px)]:h-[320px] [@media(min-width:768px)_and_(max-width:858px)]:h-[350px]">
         <div className="flex size-full place-content-center place-items-center overflow-visible">
