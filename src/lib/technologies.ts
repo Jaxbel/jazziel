@@ -18,8 +18,10 @@ export const technologies = [
 
   // Frontend
   { name: "React", icon: "React", url: "https://react.dev" },
-  { name: "Remix", icon: "Remix", url: "https://remix.run" },
+  { name: "Vite", icon: "Vite", url: "https://vitejs.dev" },
   { name: "Tailwind CSS", icon: "TailwindCSS", url: "https://tailwindcss.com" },
+  { name: "Framer Motion", icon: "FramerMotion", url: "https://www.framer.com/motion/" },
+  { name: "Shadcn UI", icon: "ShadcnUI", url: "https://ui.shadcn.com" },
 
   // Data
   { name: "PostgreSQL", icon: "Postgres", url: "https://www.postgresql.org" },

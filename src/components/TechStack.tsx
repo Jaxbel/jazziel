@@ -14,7 +14,7 @@ type Category = {
 
 const CATEGORIES: Category[] = [
   { title: "Backend", items: ["Java", "Spring Boot", "Python", "FastAPI", "TypeScript", "Node.js"] },
-  { title: "Frontend", items: ["React", "Remix", "TypeScript", "Tailwind CSS"] },
+  { title: "Frontend", items: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion", "Shadcn UI"] },
   { title: "Data", items: ["PostgreSQL", "MySQL", "Prisma", "Redis"] },
   { title: "DevOps & Tools", items: ["Docker", "Git", "GitLab", "Terraform"] },
   { title: "Mobile & Desktop", items: ["React Native", "Expo", "WebAssembly"] },
