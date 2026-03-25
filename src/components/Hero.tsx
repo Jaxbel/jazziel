@@ -101,7 +101,7 @@ export const Hero: FC = () => {
   return (
     <Section
       id="hero"
-      className="relative flex flex-col items-center justify-center py-20 md:py-32 overflow-hidden"
+      className="relative flex flex-col items-center justify-center pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden"
     >
       {/* Background Ornament */}
       <div className="absolute inset-0 -z-10 pointer-events-none">

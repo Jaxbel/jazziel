@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "py-4" : "py-6"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "py-2 md:py-4" : "py-3 md:py-6"
         }`}
     >
       <div className="container px-6 mx-auto">
