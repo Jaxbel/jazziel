@@ -14,10 +14,10 @@ export default function Home() {
       <ScrollProgress />
       <Navbar />
       <Hero />
+      <About />
       <TechStack />
       <FeaturedProjects />
       <FeaturedEducation />
-      <About />
       <Contact />
     </>
   )
