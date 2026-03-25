@@ -6,10 +6,12 @@ import { FeaturedProjects } from '@/components/FeaturedProjects'
 import { FeaturedEducation } from '@/components/FeatureEducation'
 import { About } from '@/components/About'
 import { Contact } from '@/components/Contact'
+import { ScrollProgress } from '@/components/ScrollProgress'
 
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <TechStack />

@@ -3,12 +3,12 @@ import type { TechnologyName } from "@/lib/technologies";
 export type Project = {
   name: string;
   description: string;
-  url: string;            
-  actionLabel?: string;   
-  repo?: string;         
-  tech: TechnologyName[]; 
+  url: string;
+  actionLabel?: string;
+  repo?: string;
+  tech: TechnologyName[];
   featured?: boolean;
-  image?: string;        
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -23,8 +23,8 @@ export const projects: Project[] = [
   {
     name: "Softnode.mx",
     description:
-      "Platform for custom software services. Cloud-integrated with admin dashboard.",
-    url: "https://softnode.mx",
+      "Platform for custom software services.",
+    url: "https://softnode.dev",
     actionLabel: "Preview",
     tech: ["MySQL", "React", "TypeScript"],
     featured: false,
